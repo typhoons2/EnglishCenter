@@ -1,0 +1,69 @@
+﻿<Window x:Class="EnglishCenter.View.NewLevelForm"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="English center" Height="400" Width="700"
+        Background="#F8F8F8" Icon="/Resources/ic_apple.png"
+        WindowStartupLocation="CenterScreen">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="70"/>
+            <RowDefinition Height="60"/>
+            <RowDefinition Height="40"/>
+            <RowDefinition Height="40"/>
+            <RowDefinition Height="40"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="50"/>
+        </Grid.RowDefinitions>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="125"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+
+        <Grid Grid.Row="0" Grid.ColumnSpan="2">
+            <Grid.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FF52B0BB" Offset="0"/>
+                    <GradientStop Color="#FFFFA619" Offset="1"/>
+                </LinearGradientBrush>
+            </Grid.Background>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="50"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+
+            <Image Source="/EnglishCenter;component/Resources/exam_white.png" Margin="10"/>
+            <TextBlock Grid.Column="1" Text="Thêm Trình Độ" FontSize="30" Foreground="White" VerticalAlignment="Center"/>
+        </Grid>
+
+        <TextBlock Grid.Row="1" Grid.Column="0" VerticalAlignment="Bottom" Margin="20,0,10,5" Text="Mã trình độ" FontSize="15" />
+        <TextBox Name="tb_maTrinhDo" Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="2" VerticalAlignment="Bottom" MinWidth="200" Margin="5,0,200,5" Height="25"/>
+
+
+        <TextBlock Grid.Row="2" Grid.Column="0" VerticalAlignment="Bottom" Margin="20,0,10,5" Text="Tên trình độ" FontSize="15" />
+        <TextBox Name="tb_tenTrinhDo" Grid.Row="2" Grid.Column="1" Grid.ColumnSpan="2" VerticalAlignment="Bottom" MinWidth="200" Margin="5,0,200,5" Height="25" />
+
+
+
+        <Grid Grid.Row="6" Grid.ColumnSpan="2">
+            <Button Content="Thoát" HorizontalAlignment="Right" Margin="10,0,20,5" Click="Button_Thoat_Click">
+                <Button.Background>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <GradientStop Color="#FF52B0BB" Offset="0"/>
+                        <GradientStop Color="#FFFFA619" Offset="1"/>
+                    </LinearGradientBrush>
+                </Button.Background>
+            </Button>
+            <Button Content="Lưu" HorizontalAlignment="Right" Margin="10,0,110,5" Click="Button_Luu_Click">
+                <Button.Background>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <GradientStop Color="#FF52B0BB" Offset="0"/>
+                        <GradientStop Color="#FFFFA619" Offset="1"/>
+                    </LinearGradientBrush>
+                </Button.Background>
+            </Button>
+            <!--<Button Content="Hủy" HorizontalAlignment="Right" Margin="10,0,190,5" Click="Button_Huy_Click"/>-->
+        </Grid>
+
+    </Grid>
+</Window>

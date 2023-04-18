@@ -1,0 +1,85 @@
+﻿<Window x:Class="EnglishCenter.View.PhieuThuHocPhi"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="English Center" Height="400" Width="700"
+        Background="#F8F8F8" Icon="/Resources/ic_apple.png">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="70"/>
+            <RowDefinition Height="70"/>
+            <RowDefinition Height="40"/>
+            <RowDefinition Height="40"/>
+            <RowDefinition Height="40"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="70"/>
+        </Grid.RowDefinitions>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="150"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+
+        <TextBlock Grid.Row="1" Grid.Column="2" HorizontalAlignment="Right" FontSize="15" Margin="10,10,10,0" Text="27/5/2016"/>
+
+        <Grid Grid.Row="0" Grid.ColumnSpan="2">
+            <Grid.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FF52B0BB" Offset="0"/>
+                    <GradientStop Color="#FFFFA619" Offset="1"/>
+                </LinearGradientBrush>
+            </Grid.Background>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="50"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+
+            <Image Source="/EnglishCenter;component/Resources/cash.png" Margin="10"/>
+            <TextBlock Grid.Column="1" Text="Phiếu thu học phí" FontSize="30" Foreground="White" VerticalAlignment="Center"/>
+        </Grid>
+
+        <TextBlock Grid.Row="2" Grid.Column="0" VerticalAlignment="Bottom" Margin="20,0,10,5" Text="Tên học viên" FontSize="15" />
+        <ComboBox Name="cb_tenHocVien" Grid.Row="2" Grid.Column="1" Grid.ColumnSpan="2" VerticalAlignment="Bottom" MinWidth="200" Margin="5,0,200,5" Height="25" SelectionChanged="cb_tenHocVien_SelectionChanged">
+            <ComboBox.ItemTemplate>
+                <DataTemplate>
+                    <TextBlock Text="{Binding MTenHocVien}"/>
+                </DataTemplate>
+            </ComboBox.ItemTemplate>
+        </ComboBox>
+
+        <TextBlock Grid.Row="3" Grid.Column="0" VerticalAlignment="Bottom" Margin="20,0,10,5" Text="Số điện thoại" FontSize="15" />
+        <TextBox Name="tb_sdt" Grid.Row="3" Grid.Column="1" Grid.ColumnSpan="2" VerticalAlignment="Bottom" MinWidth="200" Margin="5,0,200,5" Height="25" PreviewTextInput="NumberValidationTextBox"/>
+
+        <TextBlock Grid.Row="1" Grid.Column="0" VerticalAlignment="Bottom" Margin="20,0,10,5" Text="Lớp" FontSize="15" />
+        <ComboBox Name="cb_lop"  Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="2" VerticalAlignment="Bottom" MinWidth="250" HorizontalAlignment="Left" Margin="5,0,50,5" Height="25" SelectionChanged="cb_lop_SelectionChanged">
+            <ComboBox.ItemTemplate>
+                <DataTemplate>
+                    <TextBlock Text="{Binding MMaLop}"/>
+                </DataTemplate>
+            </ComboBox.ItemTemplate>
+        </ComboBox>
+
+        <TextBlock Grid.Row="4" Grid.Column="0" VerticalAlignment="Bottom" Margin="20,0,10,5" Text="Số tiền" FontSize="15" />
+        <TextBox Name="tb_soTien" Grid.Row="4" Grid.Column="1" Grid.ColumnSpan="2" VerticalAlignment="Bottom" MinWidth="200" Margin="5,0,200,5" Height="25" PreviewTextInput="NumberValidationTextBox"/>
+
+        <Grid Grid.Row="7" Grid.ColumnSpan="2">
+            <Button Content="Thoát" HorizontalAlignment="Right" Margin="10,0,20,5" Click="Button_Click_2">
+                <Button.Background>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <GradientStop Color="#FF52B0BB" Offset="0"/>
+                        <GradientStop Color="#FFFFA619" Offset="1"/>
+                    </LinearGradientBrush>
+                </Button.Background>
+            </Button>
+            <Button Content="Lưu" HorizontalAlignment="Right" Margin="10,0,110,5" Click="Button_Click">
+                <Button.Background>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <GradientStop Color="#FF52B0BB" Offset="0"/>
+                        <GradientStop Color="#FFFFA619" Offset="1"/>
+                    </LinearGradientBrush>
+                </Button.Background>
+            </Button>
+            <!--<Button Content="In" HorizontalAlignment="Right" Margin="10,0,190,5" Click="Button_Click_1"/>-->
+        </Grid>
+
+    </Grid>
+</Window>
