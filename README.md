@@ -64,7 +64,7 @@ Giao diện xem các lớp mà giảng viên đang dạy.
 
 Giao diện trang thi xếp lớp của admin
 
-![image](https://github.com/typhoons2/EnglishCenter/assets/103090424/c79b1e9c-bd9c-4cf5-afc4-3ee7fe59cf53
+![image](https://github.com/typhoons2/EnglishCenter/assets/103090424/c79b1e9c-bd9c-4cf5-afc4-3ee7fe59cf53)
 
 Giao diện thêm lịch thi xếp lớp của admin
 
