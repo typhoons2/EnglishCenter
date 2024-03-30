@@ -1,4 +1,4 @@
-Đề tài quản lý học viên tại trung tâm Anh ngữ
+![image](https://github.com/typhoons2/EnglishCenter/assets/103090424/e48b0eed-40f2-4c4b-b889-a37fd30b558c)Đề tài quản lý học viên tại trung tâm Anh ngữ
 
 Giao diện quá trình chạy phần mềm
 
@@ -74,3 +74,42 @@ Giao diện thêm đề thi của admin
 
 ![image](https://github.com/typhoons2/EnglishCenter/assets/103090424/fdd7915a-4e73-4279-bd5c-ed7c7400acff)
 
+Giao diện nhập kết quả thi xếp lớp của admin
+
+![image](https://github.com/typhoons2/EnglishCenter/assets/103090424/f01b9928-b904-4a15-a820-7d07bb8e2ff8)
+
+Giao diện thêm lịch thi của admin
+
+![image](https://github.com/typhoons2/EnglishCenter/assets/103090424/d497ec81-d3ad-466a-9bdc-3549ea721f2b)
+
+Giao diện trang chương trình học của admin
+
+![image](https://github.com/typhoons2/EnglishCenter/assets/103090424/25d5e09c-f2a2-4a25-aee4-444a3760535a)
+
+Giao diện sửa thông tin chương trình học của admin
+
+![image](https://github.com/typhoons2/EnglishCenter/assets/103090424/482853e4-b13e-4903-adcf-1aab65e7f851)
+
+Giao diện thêm trình độ của admin
+
+![image](https://github.com/typhoons2/EnglishCenter/assets/103090424/724054d7-9acb-423a-b9d8-5b46847c6d21)
+
+Giao diện thêm chương trình học của admin
+
+![image](https://github.com/typhoons2/EnglishCenter/assets/103090424/3ef5cec9-b8ec-4350-aa49-116fe428d97e)
+
+Giao diện trang học phí của admin
+
+![image](https://github.com/typhoons2/EnglishCenter/assets/103090424/5fe1cc99-c369-4633-a890-90be5cb7a13a)
+
+Giao diện phiếu thu học phí của admin
+
+![image](https://github.com/typhoons2/EnglishCenter/assets/103090424/343bc691-165b-4d2a-bc10-eeb0e9479ad4)
+
+Giao diện trang thống kê (1)
+
+![image](https://github.com/typhoons2/EnglishCenter/assets/103090424/a442e587-eded-42b7-9453-15c524bd8ce5)
+
+Giao diện trang thống kê (2)
+
+![image](https://github.com/typhoons2/EnglishCenter/assets/103090424/c4c5182b-edd8-4353-aa9c-8031f5368ac9)
